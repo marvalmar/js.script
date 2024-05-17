@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice1</title>
+</head>
+<body>
+    <h1>Geeting program</h1>
+    <h2>Write your name:</h2>
+    <input type="text">
+    <br>
+    <button onclick="myFunction">Submit</button>
+    <br>
+    <p id="datosSalida1"></p>
+</body>
+<script>
+    function myFunction(){
+        let objetoEntrada = document.getElementById("campoEntrada1")
+        let nombre = objetoEntrada.value
+        let objetoSalidaParrafo = document.getElementById(datosSalida1)
+        objetoSalidaParrafo.innerHTML = "Hello "" + nombre + "!!!!"
+        
+    }
+</script>
+</html>

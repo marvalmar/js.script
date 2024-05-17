@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>What Can JavaScript Do?</h1>
+    <p id="dateDisplay"></p>
+
+    <p id="text">JavaScript can change the style of an HTML element.</p>
+    <button onclick='colorChange("orange")'>Click Me!</button>
+
+</body>
+
+<style>
+
+</style>
+
+<script>
+
+
+
+    function colorChange(color) {
+        obj1 = document.getElementById('dateDisplay');
+        obj1.style.backgroundColor = color;
+        obj1.innerHTML = Date();
+
+    }
+    
+
+    /*const currentDate = new Date().toDateString();*/
+    /*function displayDate() {
+        var currentDate = new Date();
+        var options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
+        var formattedDate = currentDate.toLocaleDateString('en-US', options);
+
+        document.getElementById('dateDisplay').innerText = formattedDate;
+    }*/
+
+    /*window.onload = function () {
+        displayDate();
+    };*/
+
+
+</script>
+</body>
+
+</html>

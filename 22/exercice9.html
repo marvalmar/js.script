@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <p>Calculate the final price</p>
+        <div>
+            <p>Item price: </p>
+            <input id="campoEntrada1" type="number">
+            <p> eur</p>
+        </div>
+        <div>
+            <p>Discount: </p>
+            <input id="campoEntrada2" type="number">
+            <p> %</p>
+        </div>
+
+    </div>
+    <button onclick="myFunction">Calculate</button>
+</body>
+<style>
+    div{
+        flex: auto;
+        flex-direction: column;
+    }
+</style>
+<script>
+    function myFunction(){
+        let objetoEntrada1 = document.getElementById("campoEntrada1");
+        let objetoEntrada2 = document.getElementById("campoEntrada2");
+
+        let numero1 = Number(objetoEntrada1.value);
+        let numero2 = Number(objetoEntrada2.value);
+
+        let objetoSalidaParrafo = document.getElementById("datoSalida1");
+
+        let resultado = numero*((100-numero2)/100);
+        objetoSalidaParrafo.innerHTML = "Precio: "+ resultado;
+
+    }
+</script>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice4</title>
+</head>
+<body>
+    <h1>Select a template for this text:</h1>
+    <div id="div">
+        <h1 id="head1">Title</h1>
+        <h2 id="head2">Subtitle</h2>
+        <p id="para">This is a paragragh</p>
+    </div>
+    <button id="temp1" onclick='colorChange("temp1")'>Template 1</button>
+    <button id="temp2" onclick='colorChange("temp2")'>Template 2</button>
+    <button id="temp3" onclick='colorChange("temp3")'>Template 3</button>
+</body>
+<style>
+    #div{
+        border: 5px solid black;
+        margin: 20px;
+        padding: 20px;
+    }
+</style>
+<script>
+    function colorChange(temp1) {
+        let obj1 = document.getElementById('div');
+        obj1.style.backgroundColor = purple;
+        let obj2 = document.getElementById('head1');
+        obj2.style.color= yellow;
+        let obj3 = document.getElementById('head2');
+        obj3.style.color= yellow;
+        let obj4 = document.getElementById('para');
+        obj4.style.color= yellow;
+    }
+</script>
+</html>

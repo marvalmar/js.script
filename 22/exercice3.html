@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice3</title>
+</head>
+<body>
+    <h1>Calculate how much rent you can pay
+         according to your salary: </h1>
+    
+    <p>To have a nice and relaxing life
+         the value of your rent must be less 
+         than 40% of your income.</p>
+    
+    <p>Enter your monthly income: </p>
+    
+    <input id="entrada">
+    <br>
+    <br>
+    <button onclick="calculateRent()">Calculate</button>
+    <p id="output"></p>
+</body>
+<script>
+    function calculateRent(){
+
+        let salary = document.getElementById("entrada").value;
+        console.log(salary);
+
+
+
+        salary = Number(salary);   
+        
+        console.log(salary);
+        
+
+        let output = salary * 40 /100 ;
+        console.log(output);
+
+        let objetoSalida = document.getElementById("output");
+        objetoSalida.innerHTML = output;
+
+    }
+</script>
+</html>

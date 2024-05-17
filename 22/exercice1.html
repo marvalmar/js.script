@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice17</title>
+</head>
+
+<body>
+    <h1>HTML</h1>
+    <br>
+    <p id="demo">HTML M the standard marImp language for creating Web pages.
+        HTML stands for Hyper Text MarImp Language Elm, describes
+        the structure of Web pages using marImp HTML elements are
+        the building bloc. of HTML pages HTML elements are
+        represented by tags HTML tags label pieces of content
+        such as 'heading., 'paragraph., 'table., and m on
+        Browsers do not display the HTML tags, but use them to
+        render the content of he page </p>
+    <br>
+    <div>
+        <input id="number" type="number">
+        <button onclick="changeSize()">Change</button>
+    </div>
+
+</body>
+<script>
+    function changeSize() {
+
+        let size = document.getElementById("number").value;
+
+        size = Number(size);
+
+        if (size >= 0 && size <= 50) {
+
+            document.getElementById("demo").style.fontSize = size + 'px';
+
+        }
+        else {
+            alert("Insert a valid number");
+        }
+
+    }
+</script>
+
+</html>

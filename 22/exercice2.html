@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice16</title>
+</head>
+
+<body>
+    <h1>The border Property</h1>
+    <div id="squares">
+        <div id="square1">
+           
+        </div>
+
+        <div id="square2">
+            
+        </div>
+    </div>
+
+    <br>
+    <p>Insert the size of the first square: </p>
+    <input type="number" id="entrada1">
+    <p>Insert the size of the second square: </p>
+    <input type="number" id="entrada2">
+    <button onclick="cambioTamanoCuadrado()">Apply</button>
+</body>
+<style>
+    #squares {
+        /*display: flex;*/
+    }
+
+    #square1 {
+        background-color: #f1f1f1;
+        margin: 20px;
+        padding: 20px;
+        font-size: 30px;
+        border: 3px solid red;
+        width: 100px;
+        height: 100px;
+        display:inline-block;
+    }
+
+    #square2 {
+        background-color: #f1f1f1;
+        margin: 20px;
+        padding: 20px;
+        font-size: 30px;
+        border: 3px solid blue;
+        width:100px;
+        height:100px;
+        display: inline-block;
+    }
+</style>
+<script>
+    function cambioTamanoCuadrado() {
+        let objetoEntrada1 = document.getElementById("entrada1");
+        let cadena1 = objetoEntrada1.value;
+
+        let objetoEntrada2 = document.getElementById("entrada2");
+        let cadena2 = objetoEntrada2.value;
+
+        let objetoCuadrado1 = document.getElementById("square1");
+        objetoCuadrado1.style.width = cadena1 + "px";
+        objetoCuadrado1.style.height = cadena1 + "px";
+
+        let objetoCuadrado2 = document.getElementById("square2");
+        objetoCuadrado2.style.width = cadena2 + "px";
+        objetoCuadrado2.style.height = cadena2 + "px";
+    }
+</script>
+
+</html>
