@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice3</title>
+</head>
+<body>
+    <h1>Calculate the final price </h1>
+    
+    <div>
+        <p>Item price: </p>
+        <input id="entrada">
+        <p>€</p>
+    </div>
+    <br>
+    <div>
+        <p>Discount: </p>
+        <input id="discount">
+        <p>%</p>
+    </div>
+    <br>
+    <button onclick="calculateRent()">Calculate</button>
+    <p id="output"></p>
+</body>
+<style>
+    div{
+        display: inline-flex;
+        padding: 10px;
+    }
+
+    p{
+        margin: 10px;
+    }
+</style>
+<script>
+    function calculateRent(){
+
+        let salary = document.getElementById("entrada").value;
+        let discount = document.getElementById("discount").value;
+        console.log(salary);
+
+
+
+        salary = Number(salary);
+        discount = Number(discount);   
+        
+        console.log(salary);
+        
+
+        let output = salary * (1-discount /100) ;
+        console.log(output);
+
+        let objetoSalida = document.getElementById("output");
+        objetoSalida.innerHTML = "The final price is : " + output;
+
+    }
+</script>
+</html>
