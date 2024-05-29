@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice3</title>
+</head>
+<body>
+    <h1>HTML</h1>
+    <p id="output">Lorem ipsum dolor sit amet,
+     consectetur adipiscing elit.
+    Integer dui mauris, aliquam
+    ut nisl vel, pulvinar porttitor
+    enim. Morbi sodales condimentum
+    dignissim. Nulla efficitur
+    elementum mauris, non elementum
+    augue vestibulum non. Mauris eu
+    pulvinar enim. Etiam at mattis mi
+    , ut tempor mi. Fusce scelerisque
+    eleifend egestas. Sed dictum nulla
+    ac augue mollis, a tincidunt quam
+    dapibus. Fusce et vehicula lorem.</p>
+    <p>Insert the font size:</p>
+    <div>
+        <input type="text" id="color">
+        <button onclick="changeColor()">Apply</button>
+    </div>
+</body>
+<script>
+    function changeColor(){
+        obj1 = document.getElementById('color');
+        let nameColor = obj1.value
+        const commonColors = [
+            "black", "white", "red", "green", "blue", "yellow", "pink", "purple",
+            "orange", "gray", "brown", "cyan", "magenta", "lime", "olive", "maroon", 
+            "navy", "teal", "aqua", "fuchsia", "silver", "gold", "indigo", "violet"
+        ]
+
+        if(!commonColors .includes(nameColor)){
+            alert("Elije un color valido.")
+        }
+
+        else{
+            obj2 = document.getElementById('output');
+            obj2.style.color = nameColor
+        }
+        
+    }
+</script>
+</html>

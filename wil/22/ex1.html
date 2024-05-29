@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice1</title>
+</head>
+<body>
+    <h1>Geeting program</h1>
+    <br>
+    <p>Write your name:</p>
+    <input type="text" id="name">
+    <button onclick="message()">Submit</button>
+    <p id="output"></p>
+</body>
+<script>
+    function message(){
+        obj1 = document.getElementById('name').value;
+        obj2 = document.getElementById('output');
+        obj2.innerHTML = "Hello " + obj1 + "!!!!"
+    }
+</script>
+</html>

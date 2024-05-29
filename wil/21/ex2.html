@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex2</title>
+</head>
+<body>
+    <h1>What Can JavaScript Do?</h1>
+    <br>
+    <p id="date"></p>
+    <br>
+    <p id="text">JavaScript can changue the style of an HTML element</p>
+    <br>
+    <button onclick='styleChange()'>Click Me!</button>
+</body>
+<script>
+    function styleChange(){
+        obj1 = document.getElementById('text');
+        obj1.style.backgroundColor = "yellow";
+        /*change.style.fontSize = '20px'*/
+        obj1.style.fontSize = '60px';
+    }
+
+</script>
+</html>
